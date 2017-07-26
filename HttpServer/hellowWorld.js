@@ -5,7 +5,7 @@ const port = 3000;
 const hostname = '127.0.0.1';
 
 http.createServer((req, res) =>{
-    serverStaticFile(res, "", 'text/html');
+    serverStaticFile(res, '/public/home.html', 'text/html');
 }).listen(port, hostname, () => {
     console.log(`Сервер запущен http://${hostname}:${port}/. Нажмите Ctr+C для остановки`);
 });
