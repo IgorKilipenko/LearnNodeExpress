@@ -1,0 +1,15 @@
+{
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser":true
+    },
+    "plugins": [
+        "react"
+    ]
+}

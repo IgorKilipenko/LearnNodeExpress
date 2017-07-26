@@ -4,15 +4,25 @@
   "description": "Meadowlark Travel Site",
   "main": "meadowlark.js",
   "scripts": {
-    "start": "nodemon ./meadowlark.js",
-    "startd": "nodemon --debug ./meadowlark.js 80"
+    "start": "./dist/bundle.js",
+    "startd": "nodemon --debug ./meadowlark.js 80",
+    "build": "webpack",
+    "watch": "webpack --progress --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "express-react-views": "^0.10.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.4.1"
   }
 }
