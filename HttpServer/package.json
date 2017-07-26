@@ -1,0 +1,12 @@
+{
+  "name": "HttpServerLearn",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "server": "node hellowWorld.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0"
+  }
+}
