@@ -9,9 +9,7 @@ app.set('port', process.env.PORT || 3000);
 
 app.get('/', require('./routes').index);
 
-app.get('/about', (req, res) => {
-    res.render('About the Meadolark Travel');
-});
+app.get('/about', require('./routes').about);
 
 // 404
 app.use((req, res) => {
